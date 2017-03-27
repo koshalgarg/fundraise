@@ -1,0 +1,48 @@
+
+<android.support.v4.widget.SwipeRefreshLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe_main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_main"
+        android:padding="12dp"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/allfunds"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_main"
+       android:layout_gravity="center"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            android:id="@+id/fab_start"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:src="@drawable/addd"
+            />
+
+    </FrameLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

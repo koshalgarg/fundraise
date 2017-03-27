@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">fundraise</string>
+    <!--  <string name="ip">mywebsitenitr.000webhostapp.com</string>-->
+    <string name="ip">192.168.43.9</string>
+
+    <string-array name="category">
+        <item>a</item>
+        <item>b</item>
+
+    </string-array>
+
+
+</resources>

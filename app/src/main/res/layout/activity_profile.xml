@@ -1,0 +1,224 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:fillViewport="true"
+     android:layout_height="match_parent">
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_personalinfo"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="17sp"
+            android:id="@+id/tv_pro_name"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="160dp"
+                android:id="@+id/tv_pro_pic"
+                android:src="@drawable/pro"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_pro_email"
+                android:maxEms="1"
+                android:enabled="false"
+                android:inputType="textEmailAddress"
+                android:hint="Email"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/et_pro_number"
+                android:inputType="number"
+                android:hint="Number"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_pro_city"
+                android:hint="city"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/et_pro_dob"
+                android:inputType="date"
+                android:hint="DOB"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:padding="5dp"
+
+                android:id="@+id/tv_pro_update"
+
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"
+                android:textColor="#FFFFFF"
+
+                />
+
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/tv_pro_logout"
+                android:gravity="center"
+                android:background="@color/colorAccent"
+                android:textColor="#FFFFFF"
+
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.v7.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:text="FUNDRAISERS"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_pro_my"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:background="#3b5998"
+
+            />
+
+        <TextView
+            android:text="FOLLOWING"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_pro_following"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:background="#3b5998"
+            />
+
+
+       </LinearLayout>
+
+         <android.support.v7.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:minHeight="200dp"
+             android:id="@+id/rv_pro"
+             android:layout_height="match_parent">
+
+
+         </android.support.v7.widget.RecyclerView>
+     </LinearLayout>
+ </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_margin="3dp"
+        android:id="@+id/fab_pro"
+
+        android:layout_gravity="bottom|end"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        />
+
+</FrameLayout>
+

@@ -1,0 +1,345 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<!--    <android.support.v4.widget.SwipeRefreshLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/str_show_fund"
+        xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_fund_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:minHeight="180dp"
+                    android:src="@mipmap/ic_launcher"
+                    />
+                <TextView
+                    android:id="@+id/tv_fund_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="category"
+                    android:layout_gravity="bottom|left"
+                    android:padding="6dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    />
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_fund_title"
+                android:layout_margin="5dp"
+                android:text="title"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_fund_name"
+                android:layout_margin="5dp"
+                android:text="by"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="18sp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_fund_for"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="for"
+                android:padding="5dp"
+                android:textSize="18sp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_fund_city"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="for"
+                android:padding="5dp"
+                android:textSize="18sp"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="raised"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="left"
+                    android:id="@+id/tv_fund_raised"
+                    android:gravity="left"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="percent"
+
+                    android:id="@+id/tv_fund_per"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:gravity="right"
+
+                    />
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_fund_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:progress="45"  />
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="STORY"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:textSize="18sp"
+            />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_fund_story"
+                android:layout_margin="5dp"
+                android:text="story"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:textSize="18sp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+
+                android:background="#c0c0c0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="GOAL\n"
+                    android:id="@+id/tv_fund_goal"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+
+                    android:background="#c0c0c0"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="FOLLOWERS\n"
+                    android:id="@+id/tv_fund_follow"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+
+                    android:id="@+id/tv_days"
+                    android:background="#c0c0c0"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="DATE\n"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:id="@+id/tv_fund_time"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_height="wrap_content"
+                android:text="CONTRIBUTE NOW"
+                android:background="#3b5998"
+                android:textColor="#FFF"
+
+                android:id="@+id/tv_fund_contribute"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="15dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="comments"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:id="@+id/tv_fund_comment" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_fund_commentbox"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:id="@+id/et_comment"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/iv_send"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rv_fund_comments"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+-->
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_show_fund_wait"
+        android:visibility="gone"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_follow"
+        android:layout_margin="15dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/bookmark"
+        />
+
+</FrameLayout>
+
+
